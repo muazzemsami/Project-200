@@ -1,0 +1,39 @@
+body {
+	font-size: 20px;
+	background-color: #2B1B17;
+	font-family: 'Oxygen', sans-serif;
+}
+/*Header */
+#header-nav {
+	background-color: black;
+	border-radius: 0;
+	border:0;
+	padding-bottom: 20px;
+}
+.navbar-brand h1 {
+	font-family: 'Lora',serif;
+	font-style: italic;
+	color: blue;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+.navbar-brand a:hover,.navbar-brand a:focus {
+	text-decoration: none;
+}
+h1:hover {
+	color: red;
+}
+#nav-list a:link,#nav-list a:visited {
+	color: white;
+}
+#nav-list a:hover,#nav-list a:active {
+	color: #FF6347;
+	background-color: #614051;
+}
+#nav-list span {
+	font-family: 'Viaoda Libre', cursive;
+
+}
