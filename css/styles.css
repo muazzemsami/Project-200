@@ -10,6 +10,9 @@ body {
 	border:0;
 	padding-bottom: 20px;
 }
+#logo-image {
+	background: url(../image/1.png) no-repeat;
+}
 .navbar-brand h1 {
 	font-family: 'Lora',serif;
 	font-style: italic;
