@@ -1,6 +1,6 @@
 body {
 	font-size: 20px;
-	background-color: #2B1B17;
+	background-color: grey;
 	font-family: 'Oxygen', sans-serif;
 }
 /*Header */
@@ -13,8 +13,8 @@ body {
 }
 .logo-image {
 	background: url(../image/dream.png) no-repeat;
-	width: 110px;
-	height: 110px;
+	width: 100px;
+	height: 80px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
@@ -78,7 +78,7 @@ div input {
 	}
 	.search-box {
 		position: absolute;
-		bottom: 70px;
+		bottom: 40px;
 		right: 0px;
 	}
 
@@ -149,7 +149,7 @@ h1:hover {
 .search-box1 {
 	position: absolute;
 	top: 20px;
-	right: 50px;
+	left: 0px;
 
 }
 .search-box1 input {
@@ -161,8 +161,16 @@ h1:hover {
 	font-size: 15px;
 	color: red;
 	margin: 0px;
+	position: absolute;
+	left: 0px;
 }
+
+h1 {
+	position: absolute;
+	left: 30%;
 }
 h1:hover {
 	color: red;
+
+}
 }
