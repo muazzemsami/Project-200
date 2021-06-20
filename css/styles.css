@@ -153,12 +153,14 @@ h1:hover {
 
 }
 .search-box1 input {
-	width: 100px;
+	width: 80px;
 	height: 30px;
+	margin: 0px;
 }
 .search-box1 i {
 	font-size: 15px;
 	color: red;
+	margin: 0px;
 }
 }
 h1:hover {
