@@ -1,7 +1,10 @@
 body {
 	font-size: 20px;
-	background-color: grey;
+	background-color: white;
 	font-family: 'Oxygen', sans-serif;
+}
+* {
+	box-sizing: border-box;
 }
 /*Header */
 
@@ -14,7 +17,7 @@ body {
 .logo-image {
 	background: url(../image/dream.png) no-repeat;
 	width: 100px;
-	height: 80px;
+	height: 95px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
@@ -47,11 +50,11 @@ h1:hover {
 	color: white;
 }
 #nav-list a:hover,#nav-list a:active {
-	color: #FF6347;
+	color: #FF007F;
 }
 #nav-list a span {
 	font-family: 'Viaoda Libre', cursive;
-	font-size: 0.8em;
+	font-size: 1em;
 
 }
 .navbar-header button.navbar-toggle, .navbar-header span {
@@ -70,6 +73,55 @@ div input {
 	font-style: italic;
 	font-family: sans-serif;
 }
+.search-box .btn i {
+	font-size:24px;
+	color:red
+}
+/*Ende Header*/
+
+.container-fluid .jumbotron {
+	background-color: #000033;
+	box-shadow: 0 0 20px #000033;
+	border: 2px solid black;
+	height: 300px;
+	margin-top: 30px;
+	width: 60%;
+	height: 300px;
+	position: absolute;
+	left: 20%;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
+	background-size: 100% 100%;
+	animation: slider 60s infinite linear;
+}
+@keyframes slider{
+	0%{
+		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
+	}
+	15%{
+		background-image: url(https://c4.wallpaperflare.com/wallpaper/617/75/582/jack-sparrow-pirates-of-the-caribbean-johnny-depp-pirates-wallpaper-preview.jpg);
+	}
+	30% {
+		background-image: url(https://c4.wallpaperflare.com/wallpaper/381/675/700/movies-bollywood-movies-wallpaper-preview.jpg);
+	}
+	45% {
+		background-image: url(https://c4.wallpaperflare.com/wallpaper/691/805/101/movie-titanic-kate-winslet-leonardo-dicaprio-wallpaper-preview.jpg);
+	}
+	60% {
+		background-image: url(../image/chennai.jpg);
+	}
+	75% {
+		background-image: url(https://c4.wallpaperflare.com/wallpaper/797/633/218/tyrion-lannister-game-of-thrones-wallpaper-preview.jpg);
+	}
+	90%{
+		background-image: url(../image/kick.jpg);
+	}
+	100% {
+		background-image: url(https://c4.wallpaperflare.com/wallpaper/26/914/515/breaking-bad-walter-white-aaron-paul-bryan-cranston-wallpaper-preview.jpg);
+	}
+	160% {
+		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
+	}
+}
 
 /*Large Device Only*/
 @media (min-width: 1200px) {
@@ -87,18 +139,35 @@ div input {
 @media (min-width: 992px) and (max-width: 1199px) {
 	.logo-image {
 	background: url(../image/dream.png) no-repeat;
-	width: 100px;
+	width: 90px;
 	height: 100px;
 	margin-top: 15px;
 	margin-bottom: 0px;
+	margin-right: 5px;
 }
 	#nav-list a span {
 	font-family: 'Viaoda Libre', cursive;
-	font-size: 1em;
+	font-size: 0.9em;
 
+}
+.search-box {
+		position: absolute;
+		bottom: 20px;
+		right: 0px;
 }
 h1:hover {
 	color: red;
+}
+.container-fluid {
+	position: relative;
+}
+
+.navbar-brand h1 {
+	font-size: 30px;
+}
+.search-box i {
+	width: 20px;
+	height: 30px;
 }
 }
 /*Small Device Only*/
@@ -152,22 +221,29 @@ h1:hover {
 	left: 0px;
 
 }
+.Search {
+	padding-top: 20px;
+}
 .search-box1 input {
 	width: 80px;
 	height: 30px;
 	margin: 0px;
 }
-.search-box1 i {
-	font-size: 15px;
-	color: red;
-	margin: 0px;
+.search-box .btn {
 	position: absolute;
 	left: 0px;
+	padding-left: 40px;
+	padding-bottom: 10px;
+}
+.search-box1 i {
+	font-size: 30px;
+	color: red;
+	margin: 0px;
 }
 
 h1 {
 	position: absolute;
-	left: 30%;
+	left: 35%;
 }
 h1:hover {
 	color: red;
