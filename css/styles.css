@@ -83,12 +83,11 @@ div input {
 	background-color: #000033;
 	box-shadow: 0 0 20px #000033;
 	border: 2px solid black;
-	height: 300px;
-	margin-top: 30px;
-	width: 60%;
-	height: 300px;
+	margin-top: 10px;
+	width: 90%;
+	height: 350px;
 	position: absolute;
-	left: 20%;
+	left: 5%;
 	background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
 	background-size: 100% 100%;
 	animation: slider 60s infinite linear;
@@ -115,10 +114,10 @@ div input {
 	90%{
 		background-image: url(../image/kick.jpg);
 	}
-	100% {
+	95% {
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/26/914/515/breaking-bad-walter-white-aaron-paul-bryan-cranston-wallpaper-preview.jpg);
 	}
-	160% {
+	100% {
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
 	}
 }
