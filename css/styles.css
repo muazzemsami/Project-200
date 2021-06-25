@@ -1,6 +1,6 @@
 body {
 	font-size: 20px;
-	background-color: white;
+	background-color: grey;
 	font-family: 'Oxygen', sans-serif;
 }
 * {
@@ -83,14 +83,15 @@ div input {
 	background-color: #000033;
 	box-shadow: 0 0 20px #000033;
 	border: 2px solid black;
-	margin-top: 10px;
+	margin-top: 5px;
 	width: 90%;
 	height: 350px;
-	position: absolute;
+	position: relative;
 	left: 5%;
-	background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
+	background: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
 	background-size: 100% 100%;
 	animation: slider 60s infinite linear;
+	background-position: center;
 }
 @keyframes slider{
 	0%{
@@ -120,6 +121,61 @@ div input {
 	100% {
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
 	}
+}
+
+#hollywood {
+	font-style: normal;
+	padding-left: 15px;
+	background-color: maroon;
+	font-weight: bold;
+	color: white;
+}
+
+
+#endgame, #inception, #Hobbs, #matrix {
+	height: 250px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 100%;
+	border:2px solid #3F0C1F;
+	position: relative;
+	overflow: hidden;
+}
+
+#endgame:hover, #inception:hover, #Hobbs:hover, #matrix:hover {
+	box-shadow: 0 1px 5px 5px black;
+}
+#endgame {
+	background: url(../image/endgame.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#inception {
+	background: url(../image/inception.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#Hobbs {
+	background: url(../image/jurasic.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#matrix {
+	background: url(../image/matrix.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#endgame span, #inception span, #Hobbs span, #matrix span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+	background-color: black;
+	opacity: 0.5;
 }
 
 /*Large Device Only*/
