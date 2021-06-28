@@ -15,15 +15,15 @@ body {
 	padding-bottom: 20px;
 }
 .logo-image {
-	background: url(../image/dream.png) no-repeat;
+	background: url(../image/dreamlogo.png);
 	width: 100px;
 	height: 95px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
 .navbar-brand h1 {
-	font-family: 'Lora',serif;
-	font-style: italic;
+	font-family: 'lora',serif;
+	font-style: MisterVampire;
 	color: blue;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
@@ -90,7 +90,7 @@ div input {
 	left: 5%;
 	background: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
 	background-size: 100% 100%;
-	animation: slider 60s infinite linear;
+	animation: slider 60s infinite;
 	background-position: center;
 }
 @keyframes slider{
@@ -123,7 +123,7 @@ div input {
 	}
 }
 
-#hollywood {
+#line {
 	font-style: normal;
 	padding-left: 15px;
 	background-color: maroon;
@@ -132,7 +132,7 @@ div input {
 }
 
 
-#endgame, #inception, #Hobbs, #matrix {
+.movie {
 	height: 250px;
 	margin-top: 10px;
 	margin-bottom: 15px;
@@ -140,9 +140,11 @@ div input {
 	border:2px solid #3F0C1F;
 	position: relative;
 	overflow: hidden;
+	font-family: 'Viaoda Libre', cursive;
+	font-weight: bold;
 }
 
-#endgame:hover, #inception:hover, #Hobbs:hover, #matrix:hover {
+.movie:hover{
 	box-shadow: 0 1px 5px 5px black;
 }
 #endgame {
@@ -165,17 +167,80 @@ div input {
 	background-position: center;
 	background-size: cover;
 }
+#dark {
+	background: url(../image/dark.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#moneyheist {
+	background: url(../image/money.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#taqdeer {
+	background: url(../image/taqdeer.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#mirzapur {
+	background: url(../image/mirzapur.jpg);
+	background-position:center;
+	background-size: cover;
+}
+#Geetha {
+	background: url(../image/geetha.jpg);
+	background-position:center;
+	background-size: cover;	
+}
+#parasite {
+	background: url(../image/parasite.jpg);
+	background-position:center;
+	background-size: cover;	
+}
+#dhoni {
+	background: url(../image/dhoni.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#charlie {
+	background: url(../image/charlie.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#fast {
+	background: url(../image/fast.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#karnan {
+	background: url(../image/karnan.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#blinders {
+	background: url(../image/blinders.jpg);
+	background-position: center;
+	background-size: cover;	
+}
+#Drishyam2 {
+	background: url(../image/Drishyam2.jpg);
+	background-position: center;
+	background-size: cover;	
+}
 
-#endgame span, #inception span, #Hobbs span, #matrix span {
+
+
+
+.movie span{
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	width: 100%;
 	text-align: center;
-	color: #fff;
+	color: yellow;
 	font-size: 1.5em;
 	background-color: black;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 /*Large Device Only*/
