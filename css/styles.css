@@ -16,15 +16,15 @@ body {
 }
 .logo-image {
 	background: url(../image/dreamlogo.png);
-	width: 100px;
-	height: 95px;
+	width: 110px;
+	height: 118px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
 .navbar-brand h1 {
 	font-family: 'lora',serif;
 	font-style: MisterVampire;
-	color: blue;
+	color: #FFE4C4;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
 	margin-top: 15px;
@@ -258,9 +258,9 @@ div input {
 /*Medium Device Only*/
 @media (min-width: 992px) and (max-width: 1199px) {
 	.logo-image {
-	background: url(../image/dream.png) no-repeat;
-	width: 90px;
-	height: 100px;
+	background: url(../image/dreamlogo.png) no-repeat;
+	width: 110px;
+	height: 118px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 	margin-right: 5px;
