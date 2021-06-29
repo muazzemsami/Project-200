@@ -276,8 +276,11 @@ section {
 	font-style: italic;
 }
 #quote p:nth-child(2) {
-	margin: 25px;
-	margin-left: 0px;
+	margin-top: 25px;
+}
+#quote p:nth-child(3) {
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 #contact {
 	text-align: ;
@@ -287,8 +290,8 @@ section {
 	margin: 20px;
 }
 #copy {
-	color: #fff;
 	text-align: center;
+	color: white;
 	font-weight: bold;
 }
 
