@@ -286,6 +286,11 @@ section {
 	font-size: 2em;
 	margin: 20px;
 }
+#copy {
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
 
 /*Large Device Only*/
 @media (min-width: 1200px) {
