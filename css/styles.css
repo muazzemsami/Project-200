@@ -2,6 +2,7 @@ body {
 	font-size: 20px;
 	background-color: grey;
 	font-family: 'Oxygen', sans-serif;
+	color: white;
 }
 * {
 	box-sizing: border-box;
@@ -23,7 +24,6 @@ body {
 }
 .navbar-brand h1 {
 	font-family: 'Castoro', serif;
-	font-style: G;
 	color: #FFE4C4;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
@@ -127,7 +127,6 @@ div input {
 	font-style: normal;
 	padding-left: 15px;
 	background-color: maroon;
-	font-weight: bold;
 	color: white;
 }
 
@@ -233,8 +232,6 @@ div input {
 }
 
 
-
-
 .movie span{
 	position: absolute;
 	bottom: 0;
@@ -293,6 +290,184 @@ section {
 	text-align: center;
 	color: white;
 	font-weight: bold;
+}
+/*End Footer*/
+
+
+/*Hollywood*/
+#description h3 {
+	font-weight: bold;
+	font-family: 'Viaoda Libre', cursive;
+}
+#description {
+	color: black;
+}
+#description #quote {
+	font-size: 0.8em;
+}
+#description #release {
+	font-size: 0.9em;
+	font-family: 'Lora', sans-serif;
+}
+#description #rating {
+	color: red;
+}
+#download {
+	background-color: green;
+	border:2px solid black;
+	color: black;
+	text-align: center;
+	box-shadow: 0 0 5px blue;
+	padding-left: 5px;
+}
+
+#description #category span:hover {
+	color: blue;
+}
+#download:hover {
+	background-color: red;
+}
+
+#avatar {
+	background: url("../image/hollywood/avatar.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#joker {
+	background: url("../image/hollywood/joker.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#redemption {
+	background: url("../image/hollywood/redemption.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#five {
+	background: url("../image/hollywood/five-feet-apart.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#parasite {
+	background: url("../image/hollywood/parasite.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#titanic {
+	background: url("../image/hollywood/titanic.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#fantastic {
+	background: url("../image/hollywood/fantastic.jpg");
+	background-position: center;
+	background-size: cover;
+}
+/*End Of Hollywood*/
+
+/*Bollywood*/
+#chennai {
+	background: url("../image/bollywood/chennai.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#pk {
+	background: url("../image/bollywood/pk.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#bajrangi {
+	background: url("../image/bollywood/bhaijan.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#kabil {
+	background: url("../image/bollywood/kabil.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#idiots {
+	background: url("../image/bollywood/idiot.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#zindagi {
+	background: url("../image/bollywood/dearzindagi.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#rustom {
+	background: url("../image/bollywood/rustom.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#terenam {
+	background: url("../image/bollywood/terenam.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#kalhonaho {
+	background: url("../image/bollywood/kalhonaho.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#munna {
+	background: url("../image/bollywood/munna.jpg");
+	background-position: center;
+	background-size: cover;
+}
+/*End Of Bollywood*/
+
+/*SouthIndia*/
+#bharat {
+	background: url("../image/south-indian/bharat.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#i {
+	background: url("../image/south-indian/i.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#ranjana {
+	background: url("../image/south-indian/ranjana.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#geeta {
+	background: url("../image/south-indian/geeta.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#son {
+	background: url("../image/south-indian/son.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#kgf {
+	background: url("../image/south-indian/kgf.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#padi {
+	background: url("../image/south-indian/padi.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#bahubali {
+	background: url("../image/south-indian/bahubali.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#charlie {
+	background: url("../image/south-indian/charlie.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#theri {
+	background: url("../image/south-indian/theri.jpg");
+	background-position: center;
+	background-size: cover;
 }
 
 /*Large Device Only*/
@@ -423,4 +598,5 @@ h1:hover {
 #about,#contact,#quote {
 	text-align: center;
 }
+
 }
