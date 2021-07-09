@@ -24,13 +24,14 @@ body {
 }
 .navbar-brand h1 {
 	font-family: 'Castoro', serif;
-	color: #FFE4C4;
+	color: #befaee;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
 	margin-top: 15px;
 	margin-bottom: 0px;
 	text-align: center;
 }
+
 .navbar-brand a:hover,.navbar-brand a:focus {
 	text-decoration: none;
 }
@@ -40,23 +41,56 @@ h1:hover {
 
 
 #nav-list {
-	margin-top: 15px;
+	margin-top: 30px;
+	position: relative;
 }
+
 #nav-list a {
 	color: white;
 	text-align: center;
+	padding-right: 10px;
+	text-decoration: none;
 }
-#nav-list a:link,#nav-list a:visited {
+#nav-list a:link {
 	color: white;
 }
-#nav-list a:hover,#nav-list a:active {
-	color: #FF007F;
+#nav-list a:hover {
+	color: blue;
 }
+#nav-list a:active {
+	color: red;
+}
+
 #nav-list a span {
 	font-family: 'Viaoda Libre', cursive;
 	font-size: 1em;
 
 }
+
+/*Dropdown*/
+.dropdown {
+	display: none;
+}
+#nav-list li:hover .dropdown {
+	display: block;
+	position: absolute;
+	left: 0%;
+	top: 100%;
+	background-color: black;
+	z-index: 5;
+
+}
+
+.dropdown ul {
+	margin: 10px;
+	list-style-type: none;
+
+}
+.dropdown ul li {
+	width: 150px;
+	padding: 10px;
+}
+
 .navbar-header button.navbar-toggle, .navbar-header span {
 	border: 1px solid red;
 }
@@ -78,7 +112,6 @@ div input {
 	color:red
 }
 /*Ende Header*/
-
 .container-fluid .jumbotron {
 	background-color: #000033;
 	box-shadow: 0 0 20px #000033;
@@ -93,6 +126,7 @@ div input {
 	animation: slider 60s infinite;
 	background-position: center;
 }
+
 @keyframes slider{
 	0%{
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
@@ -122,6 +156,7 @@ div input {
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
 	}
 }
+
 
 #line {
 	font-style: normal;
@@ -176,7 +211,7 @@ div input {
 	background-size: cover;
 }
 #moneyheist {
-	background: url(../image/money.jpg);
+	background: url(../image/moneyheist.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -310,22 +345,24 @@ section {
 	font-family: 'Lora', sans-serif;
 }
 #description #rating {
-	color: red;
+	color: yellow;
 }
 #download {
-	background-color: green;
+	background-color: #080808;
 	border:2px solid black;
-	color: black;
+	color: white;
 	text-align: center;
-	box-shadow: 0 0 5px blue;
+	
 	padding-left: 5px;
 }
 
 #description #category span:hover {
 	color: blue;
+	cursor: pointer;
 }
 #download:hover {
-	background-color: red;
+	background-color: #010b13;
+	box-shadow: 0 0 5px blue;
 }
 
 #avatar {
@@ -459,7 +496,7 @@ section {
 	background-position: center;
 	background-size: cover;
 }
-#charlie {
+#charlie1 {
 	background: url("../image/south-indian/charlie.jpg");
 	background-position: center;
 	background-size: cover;
@@ -469,6 +506,40 @@ section {
 	background-position: center;
 	background-size: cover;
 }
+/*End Of South-Indian*/
+
+/*Tv & Web*/
+#mohanagar {
+	background: url("../image/tv/mohanagar.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#friend {
+	background: url("../image/tv/friend.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#thrones {
+	background: url("../image/tv/thrones.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#sacred {
+	background: url("../image/tv/sacred.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#sherlock {
+	background: url("../image/tv/sherlock.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#break {
+	background: url("../image/tv/break.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
 
 /*Large Device Only*/
 @media (min-width: 1200px) {
@@ -596,6 +667,31 @@ h1:hover {
 }
 
 #about,#contact,#quote {
+	text-align: center;
+}
+
+/*Dropdown*/
+#nav-list {
+position: relative;
+} 
+ .dropdown {
+ 	position: relative;
+	display: block;
+	background-color: black;
+	overflow: hidden;
+
+}
+.dropdown ul {
+	margin: 10px;
+	list-style-type: none;
+
+}
+.dropdown ul li {
+	width: 100%;
+	padding: 10px;
+	
+}
+.dropdown ul li a {
 	text-align: center;
 }
 
