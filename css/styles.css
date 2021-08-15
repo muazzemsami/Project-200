@@ -1,8 +1,8 @@
 body {
 	font-size: 20px;
-	background-color: grey;
+	background-color: #808080;
 	font-family: 'Oxygen', sans-serif;
-	color: white;
+	color: black;
 }
 * {
 	box-sizing: border-box;
@@ -55,7 +55,7 @@ h1:hover {
 	color: white;
 }
 #nav-list a:hover {
-	color: blue;
+	color: #FF7F50;
 }
 #nav-list a:active {
 	color: red;
@@ -98,27 +98,349 @@ h1:hover {
 	clear: both;
 	margin-top: -30px;
 }
-div input {
-	border: 3px solid red;
-	height: 30px;
-	width: 250px;
-	border-radius: 50px;
-	padding-left: 20px;
-	font-style: italic;
-	font-family: sans-serif;
+
+/* Search*/
+.search {
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 60px;
+	transition: 0.5s;
+	box-shadow: 0 0 0 5px black;
+	overflow: hidden;
 }
+.search.active {
+	width: 250px;
+}
+.search .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000; 
+	cursor: pointer;
+}
+.search .icon::before {
+	content: ' ';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #287dfc;
+	border-radius: 50%;
+	transform: translate(-4px,-4px);
+}
+.search .icon::after {
+	content: ' ';
+	position: absolute;
+	width: 3px;
+	height: 12px;
+	background: #287dfc;
+	border-radius: 50%;
+	transform: translate(6px,6px) rotate(315deg);
+}
+
+.search .input {
+	position: relative;
+	width: 300px;
+	height: 60px;
+	left: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search .input input {
+	position: absolute;
+	top: -18px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 10px 0;
+	color: black;
+}
+
+
+.clear {
+	position: absolute;
+	top: 40%;
+	transform: translate(-50%);
+	width: 15px;
+	height: 15px;
+	right: 15px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clear::before {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 15px;
+	background: #999;
+	transform: rotate(45deg);
+}
+.clear::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 15px;
+	background: #999;
+	transform: rotate(315deg);
+}
+/*End Search*/
+
+/*Sign in and signup*/
+
+  /* Full-width input fields*/
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+   button {
+    background-color:black;
+    color: #8200FC;
+    padding:  12px 14px;
+    margin: 3px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+  }
+
+  
+  button:hover {
+    opacity: ;
+    background-color: grey;
+    
+    
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+ 
+  
+  .containe {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+
+
+
+
+  
+  /* The Modal (background) */
+
+  .rg{
+    color: black;
+    font-weight: bold;
+    margin-left: 2px;
+
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 110%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0) ; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color:#fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+   /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+  #t {
+    text-align: center;
+    font-style: normal;
+    font-size: 1cm;
+    font-weight: bold;
+    color:black;
+    margin-top: 0.3cm;
+    
+  }
+
+
+  .heading-carousel{
+    font-weight: bold;
+    color: #000;
+    font-size: 0.8cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    margin-top: 1cm;
+  }
+
+  .carousel-cell {
+  width: 15%;
+  height: 400px;
+  margin-right: 40px;
+  border-radius: 20px;
+  counter-increment: carousel-cell;
+  background-position: center;
+  box-sizing: border-box;
+ 
+ 
+}
+
+
+
+
+
+.heading-carousel{
+  font-weight: bold;
+  color: #000;
+  font-size: 0.8cm;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  margin-top: 1cm;
+}
+
+.wrap{
+    width: 100px;
+    margin:auto;
+    margin: top 1px;
+    margin-bottom: 1px;
+    color: black;
+  
+  }
+   
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.4s;
+    width: 190px;
+    background: white;
+    text-align: center;
+    font-size: 0.5px;
+    font-family: cursive;
+    float: left;
+    margin: 2px;
+    
+  
+  }
+        
+  .card:hover{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+     background-color:#1fffff;
+  }
+  .container{
+      padding: 2px 16px;
+      color: black;
+  }
+
+
+
+
+
+
 .search-box .btn i {
 	font-size:24px;
-	color:red
+	color:red;
 }
 /*Ende Header*/
-.container-fluid .jumbotron {
+.container .jumbotron{
 	background-color: #000033;
 	box-shadow: 0 0 20px #000033;
+	border-radius: 0px;
 	border: 2px solid black;
 	margin-top: 5px;
 	width: 90%;
-	height: 350px;
+	height: 450px;
 	position: relative;
 	left: 5%;
 	background: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
@@ -132,7 +454,7 @@ div input {
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
 	}
 	15%{
-		background-image: url(https://c4.wallpaperflare.com/wallpaper/617/75/582/jack-sparrow-pirates-of-the-caribbean-johnny-depp-pirates-wallpaper-preview.jpg);
+		background-image: url(../image/jack-sparrow.jpg);
 	}
 	30% {
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/381/675/700/movies-bollywood-movies-wallpaper-preview.jpg);
@@ -245,6 +567,11 @@ div input {
 	background-position: center;
 	background-size: cover;
 }
+#blinders {
+	background: url(../image/loki.jpg);
+	background-position: center;
+	background-size: cover;	
+}
 #fast {
 	background: url(../image/fast.jpg);
 	background-position: center;
@@ -255,11 +582,7 @@ div input {
 	background-position: center;
 	background-size: cover;
 }
-#blinders {
-	background: url(../image/blinders.jpg);
-	background-position: center;
-	background-size: cover;	
-}
+
 #Drishyam2 {
 	background: url(../image/Drishyam2.jpg);
 	background-position: center;
@@ -277,6 +600,28 @@ div input {
 	font-size: 1em;
 	background-color: black;
 	opacity: 0.7;
+}
+/*Previous & Next*/
+div .next {
+	text-align: center;
+	margin: 1px;
+	margin-top: 20px;
+}
+div .next span {
+	width: 50px;
+	padding: 5px;
+	background-color: white;
+	margin: 1px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+div .next a {
+	text-decoration: none;
+	color: maroon;
+}
+div .next span:hover {
+	background-color: black;
 }
 
 /*Footer*/
@@ -543,7 +888,7 @@ section {
 
 /*Large Device Only*/
 @media (min-width: 1200px) {
-	.container-fluid {
+	.container {
 		position: relative;
 	}
 	.search-box {
@@ -576,7 +921,7 @@ section {
 h1:hover {
 	color: red;
 }
-.container-fluid {
+.container {
 	position: relative;
 }
 
@@ -627,7 +972,7 @@ h1:hover {
 	text-align: center;
 	font-size: 5vw;
 }
-.container-fluid {
+.container {
 	position: relative;
 }
 
@@ -669,6 +1014,9 @@ h1:hover {
 #about,#contact,#quote {
 	text-align: center;
 }
+#signin {
+	text-align: center;
+}
 
 /*Dropdown*/
 #nav-list {
@@ -694,5 +1042,127 @@ position: relative;
 .dropdown ul li a {
 	text-align: center;
 }
+
+   button {
+    background-color:black;
+    color: #8200FC;
+    padding:  12px 14px;
+    margin: 3px 0;
+    border: none;
+    cursor: pointer;
+    width: 8%;
+    text-align: center;
+    
+  }
+
+  
+  button:hover {
+    opacity: ;
+    background-color: grey;
+    
+    
+  }
+
+
+/* Search*/
+.search {
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	border-radius: 60px;
+	transition: 0.5s;
+	/*box-shadow: 0 0 0 5px black;*/
+	overflow: hidden;
+}
+.search.active {
+	width: 250px;
+}
+.search .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000; 
+	cursor: pointer;
+}
+.search .icon::before {
+	content: ' ';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #287dfc;
+	border-radius: 50%;
+	transform: translate(-4px,-4px);
+}
+.search .icon::after {
+	content: ' ';
+	position: absolute;
+	width: 3px;
+	height: 12px;
+	background: #287dfc;
+	border-radius: 50%;
+	transform: translate(6px,6px) rotate(315deg);
+}
+
+.search .input {
+	position: relative;
+	width: 300px;
+	height: 60px;
+	left: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search .input input {
+	position: absolute;
+	top: -18px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 10px 0;
+	color: black;
+}
+
+
+.clear {
+	position: absolute;
+	top: 40%;
+	transform: translate(-50%);
+	width: 15px;
+	height: 15px;
+	right: 15px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clear::before {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 15px;
+	background: #999;
+	transform: rotate(45deg);
+}
+.clear::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 15px;
+	background: #999;
+	transform: rotate(315deg);
+}
+/*End Search*/
 
 }
