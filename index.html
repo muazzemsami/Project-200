@@ -17,9 +17,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 	<header>
@@ -34,7 +36,7 @@
 					<div class="navbar-brand">
 						<a href="index.html"><h1 class="pull-left">DreamFlix</h1></a>
 					</div>
-					 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsable-nav"  aria-expanded="false">
+					 <button class="navbar-toggle collapsed button" type="button" data-toggle="collapse" data-target="#collapsable-nav"  aria-expanded="false">
 					 	<span class="sr-only">Toggle Navigation</span>
 					 	<span class="icon-bar"></span>
 					 	<span class="icon-bar"></span>
@@ -65,12 +67,12 @@
 									<li><a href="south.html">Crime</a></li>
 									<li><a href="web.html">Thriller</a></li>
 									<li><a href="web.html">Sci-fi</a></li>
-									<li><a href="web.html">romance</a></li>
+									<li><a href="web.html">Romance</a></li>
 								</ul>
 							</div>
 						</li><hr class="visible-xs">
 						<li>
-							<a href="#"><span>Special Categories</span></a>
+							<a href="special.html"><span>Special Categories</span></a>
 						</li>
 						<li>
 							<a href="#contact"><span>Contact</span></a>
@@ -78,25 +80,144 @@
 						<li>
 							<a href="#about"><span>About Us</span></a>
 						</li>
-					</ul>
-				</div>
-				<div class="search-box pull-right hidden-xs">
-					<input type="text" name="box" placeholder="Search Your Movies">
-					<div class="btn">
-						<i class="fa fa-search"></i>
-					</div>
-				</div>
-				<div class="search-box1 visible-xs">
-					<div class="btn">
-						<a href="#"><i class="fa fa-search"></i></a>
-					</div>
-				</div>
+						
 
+
+					<li class="nav-item">
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Register</button>
+
+                        <div id="id01" class="modal">
+
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+
+                                </div>
+                                <h2 class="rg" style="margin-left: 0.5cm;">Register</h2>
+
+                                <div class="container">
+
+
+                                    <p class="rg">Please fill in this form to create an account.</p>
+
+                                    <hr>
+                                    <label for="email"> <b>Email</b></label>
+                                    <input type="text" placeholder="Enter email" name="email" required>
+
+                                    <label for="password"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+
+                                    <label for="Re-password"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="Re-password" required>
+
+
+                                    <button class="type=submit">Register</button>
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+
+
+                                </div>
+                            </form>
+                        </div>    
+
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('id01');
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <button onclick="document.getElementById('id02').style.display='block'"
+                            style="width:auto;">Login</button>
+
+
+                        <div id="id02" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button class="type=submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+
+
+                                </div>
+                            </form>
+                        </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('id02');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+              </li>
+
+				</ul>
+
+				</div>
+				
+	<div class="search pull-right hidden-xs">
+		<div class="icon"></div>
+		<div class="input">
+			<input type="text" name="" placeholder="search..." id="mysearch">
+		</div>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+	</div>
+	<div class="search pull-left visible-xs">
+		<div class="icon"></div>
+		<div class="input">
+			<input type="text" name="" placeholder="search..." id="mysearch">
+		</div>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+	</div>
+				
+
+
+			</div>
+			<div id="content">
+								
 			</div>
 		</nav>
 	</header>
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="jumbotron">
 
 		</div>
@@ -104,18 +225,25 @@
 		<i class="fa fa-film">
 			<span>Latest</span>
 		</i></div>
-		<div id="home-tile" class="row">
+		<div id="home-tile" class="row slider">
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="fast" class="movie"><span>Fast & Furious 9</span></div></a>
+				<a href="web.html"><div id="blinders" class="movie"><span>Loki</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="karnan" class="movie"><span>Karnan</span></div></a>
+				<a href="hollywood.html"><div id="fast" class="movie"><span>Fast & Furious 9</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.home-tile"><div id="blinders" class="movie"><span>Peaky Blinders</span></div></a>
+				<a href="south.html"><div id="karnan" class="movie"><span>Karnan</span></div></a>
+			</div>
+			
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="south.html"><div id="Drishyam2" class="movie"><span>Drishyam 2: The Resumption</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="Drishyam2" class="movie"><span>Drishyam 2: The Resumption</span></div></a>
+				<a href="south.html"><div id="mohanagar" class="movie"><span>Mohanagar</span></div></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="south.html"><div id="padi" class="movie"><span>Padi Padi Leche Manasu</span></div></a>
 			</div>
 		</div>
 
@@ -123,30 +251,30 @@
 		<i class="fa fa-film">
 			<span>Movies</span>
 		</i></div>
-		<div id="home-tile" class="row">
+		<div id="home-tile" class="row slider">
 			<div class="col-md-3 col-sm-4 col-xs-6">
 				<a href="hollywood.html"><div id="endgame" class="movie"><span>Avengers EndGame</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="parasite" class="movie"><span>Parasite</span></div></a>
+				<a href="hollywood.html"><div id="parasite" class="movie"><span>Parasite</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="Geetha" class="movie"><span>Geetha Govindam</span></div></a>
+				<a href="south.html"><div id="Geetha" class="movie"><span>Geetha Govindam</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="dhoni" class="movie"><span>MS Dhoni:The Untold Story</span></div></a>
+				<a href="bollywood.html"><div id="dhoni" class="movie"><span>MS Dhoni:The Untold Story</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="inception" class="movie"><span>Inception</span></div></a>
+				<a href="hollywood.html"><div id="inception" class="movie"><span>Inception</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.home-tile"><div id="Hobbs" class="movie"><span>Jurrasic World:Fallen Kingdom</span></div></a>
+				<a href="hollywood.html"><div id="Hobbs" class="movie"><span>Jurrasic World:Fallen Kingdom</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="matrix" class="movie"><span>The Matrix</span></div></a>
+				<a href="hollywood.html"><div id="matrix" class="movie"><span>The Matrix</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="charlie" class="movie"><span>Charlie</span></div></a>
+				<a href="south.html"><div id="charlie" class="movie"><span>Charlie</span></div></a>
 			</div>
 		</div>
 
@@ -154,18 +282,21 @@
 		<i class="fa fa-film">
 			<span>Tv & Web Series</span>
 		</i></div>
-		<div id="home-tile" class="row">
+		<div id="home-tile" class="row slider">
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="dark" class="movie"><span>Dark</span></div></a>
+				<a href="web.html"><div id="dark" class="movie"><span>Dark</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="moneyheist" class="movie"><span>Money Heist</span></div></a>
+				<a href="web.html"><div id="moneyheist" class="movie"><span>Money Heist</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.home-tile"><div id="taqdeer" class="movie"><span>Taqdeer: Bengali Web Series</span></div></a>
+				<a href="web.html"><div id="taqdeer" class="movie"><span>Taqdeer: Bengali Web Series</span></div></a>
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6">
-				<a href="index.html"><div id="mirzapur" class="movie"><span>Mirzapur:Indian Web Series</span></div></a>
+				<a href="web.html"><div id="mirzapur" class="movie"><span>Mirzapur:Indian Web Series</span></div></a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<a href="web.html"><div id="sherlock" class="movie"><span>Sherlock Homes</span></div></a>
 			</div>
 		</div> <!-- END of home tiles-->
 	</div> <!-- Endf of main content-->
@@ -217,6 +348,47 @@
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+	$('.slider').slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: true
+			}
+		},
+
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+
+		]
+
+	});
+</script>
 
 </body>
 </html>
